@@ -1,0 +1,1595 @@
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Storage server added
+
+FROM: 10.42.0.1:8081
+TYPE: Client Connection
+DATA: Connection Connected
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: ./SS_folder
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/three.txt
+./SS_folder/two.txt
+
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Storage server added
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: ./SS_1
+./SS_1/five.txt
+./SS_folder
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/three.txt
+./SS_folder/two.txt
+
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:6
+DATA: path:./SS_folder/four.txt destination_path:./SS_1
+
+TO: 10.42.0.25:8080
+TYPE: Copy Request
+DATA: Request sent to storage server
+
+TO: 10.42.0.25:8080
+TYPE: Copy Request
+DATA: Request sent to storage server
+
+TO: 10.42.0.1:8081
+TYPE: Copy Request
+DATA: Success:Created a copy of the file/folder
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: ./SS_1
+./SS_1/five.txt
+./SS_1/four.txt
+./SS_folder
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/three.txt
+./SS_folder/two.txt
+
+
+FROM: 10.42.0.196:8081
+TYPE: Client Connection
+DATA: Connection Connected
+
+FROM: 10.42.0.196:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.196:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.196:8081
+TYPE: List All Files
+DATA: ./SS_1
+./SS_1/five.txt
+./SS_1/four.txt
+./SS_folder
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/three.txt
+./SS_folder/two.txt
+
+
+FROM: 10.42.0.196:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.196:8081
+TYPE: Request_type:3
+DATA: path:./SS_1/four.txt content:hello i am sai
+ 
+
+TO: 10.42.0.196:8081
+TYPE: 3 type request
+DATA: IP: 10.42.0.25 Port: 2001
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:3
+DATA: path:./SS_1/four.txt content:hi from shreyash
+ 
+
+TO: 10.42.0.1:8081
+TYPE: 3 type request
+DATA: IP: 10.42.0.25 Port: 2001
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:2
+DATA: path:./SS_1/four.txt 
+
+TO: 10.42.0.1:8081
+TYPE: 2 type request
+DATA: IP: 10.42.0.25 Port: 2001
+
+FROM: 10.42.0.196:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.196:8081
+TYPE: Request_type:2
+DATA: path:./SS_1/four.txt 
+
+TO: 10.42.0.196:8081
+TYPE: 2 type request
+DATA: IP: 10.42.0.25 Port: 2001
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:3
+DATA: path:./SS_1/four.txt content:i am shreyash
+ 
+
+TO: 10.42.0.1:8081
+TYPE: 3 type request
+DATA: IP: 10.42.0.25 Port: 2001
+
+FROM: 10.42.0.196:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.196:8081
+TYPE: Request_type:3
+DATA: path:./SS_1/four.txt content:hello this is a great day 
+
+TO: 10.42.0.196:8081
+TYPE: 3 type request
+DATA: IP: 10.42.0.25 Port: 2001
+
+FROM: 10.42.0.196:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.196:8081
+TYPE: Request_type:2
+DATA: path:./SS_1/four.txt 
+
+TO: 10.42.0.196:8081
+TYPE: 2 type request
+DATA: IP: 10.42.0.25 Port: 2001
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:2
+DATA: path:./SS_1/four.txt 
+
+TO: 10.42.0.1:8081
+TYPE: 2 type request
+DATA: IP: 10.42.0.25 Port: 2001
+
+FROM: 10.42.0.196:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.196:8081
+TYPE: Request_type:3
+DATA: path:./SS_1/four.txt content:please work this time
+ 
+
+TO: 10.42.0.196:8081
+TYPE: 3 type request
+DATA: IP: 10.42.0.25 Port: 2001
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:3
+DATA: path:./SS_1/four.txt content:hello 
+
+TO: 10.42.0.1:8081
+TYPE: 3 type request
+DATA: IP: 10.42.0.25 Port: 2001
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Client Connection
+DATA: Connection Connected
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: ./SS_1
+./SS_1/five.txt
+./SS_1/four.txt
+./SS_folder
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/three.txt
+./SS_folder/two.txt
+
+
+FROM: 10.42.0.1:8081
+TYPE: Client Connection
+DATA: Connection Connected
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Client Connection
+DATA: Connection Connected
+
+FROM: 10.42.0.25:8081
+TYPE: Client Connection
+DATA: Connection Connected
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Storage server added
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Storage server added
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: ./SS_1
+./SS_1/five.txt
+./SS_1/four.txt
+./SS_folder
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/three.txt
+./SS_folder/two.txt
+
+
+FROM: 10.42.0.25:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.25:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.25:8081
+TYPE: List All Files
+DATA: ./SS_1
+./SS_1/five.txt
+./SS_1/four.txt
+./SS_folder
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/three.txt
+./SS_folder/two.txt
+
+
+FROM: 10.42.0.25:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.25:8081
+TYPE: Request_type:3
+DATA: path:./SS_folder/five.txt content:hello i am writing into five.txt
+ 
+
+TO: 10.42.0.25:8081
+TYPE: 3 type request
+DATA: Error: Path not found
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:3
+DATA: path:./SS_folder/heaven.txt content:hello! This is written by shreyash
+ 
+
+TO: 10.42.0.1:8081
+TYPE: 3 type request
+DATA: IP: 10.42.0.25 Port: 2000
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:2
+DATA: path:./SS_folder/heaven.txt 
+
+TO: 10.42.0.1:8081
+TYPE: 2 type request
+DATA: IP: 10.42.0.25 Port: 2000
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: ./SS_1
+./SS_1/five.txt
+./SS_1/four.txt
+./SS_folder
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/three.txt
+./SS_folder/two.txt
+
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:4
+DATA: path:./SS_1 name:shreyash.py 
+
+TO: 10.42.0.25:8080
+TYPE: Create Request
+DATA: Create request sent
+
+FROM: 10.42.0.25:8080
+TYPE: Create Request
+DATA: Success
+
+FROM: 10.42.0.1:8081
+TYPE: Create Request
+DATA: Success:  created on server
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: ./SS_1
+./SS_1/five.txt
+./SS_1/four.txt
+./SS_1/shreyash.py
+./SS_folder
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/three.txt
+./SS_folder/two.txt
+
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:3
+DATA: path:./SS_1/shreyash.py content:printf("Hello World")
+ 
+
+TO: 10.42.0.1:8081
+TYPE: 3 type request
+DATA: IP: 10.42.0.25 Port: 2001
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:2
+DATA: path:./SS_1/shreyash.py 
+
+TO: 10.42.0.1:8081
+TYPE: 2 type request
+DATA: IP: 10.42.0.25 Port: 2001
+
+FROM: 10.42.0.25:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.25:8081
+TYPE: Request_type:3
+DATA: path:./SS_folder/heaven.txt content:hello I am writing to you 
+
+TO: 10.42.0.25:8081
+TYPE: 3 type request
+DATA: IP: 10.42.0.25 Port: 2000
+
+FROM: 10.42.0.25:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.25:8081
+TYPE: Request_type:3
+DATA: path:./SS_folder/four.txt content:hdjf dkfja sldjfa
+ 
+
+TO: 10.42.0.25:8081
+TYPE: 3 type request
+DATA: IP: 10.42.0.25 Port: 2000
+
+FROM: 10.42.0.25:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: ./SS_1
+./SS_1/five.txt
+./SS_1/four.txt
+./SS_1/shreyash.py
+./SS_folder
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/three.txt
+./SS_folder/two.txt
+
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:6
+DATA: path:./SS_1 destination_path:./SS_folder
+
+TO: 10.42.0.25:8080
+TYPE: Copy Request
+DATA: Request sent to storage server
+
+TO: 10.42.0.25:8080
+TYPE: Copy Request
+DATA: Request sent to storage server
+
+TO: 10.42.0.1:8081
+TYPE: Copy Request
+DATA: Success:Created a copy of the file/folder
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: ./SS_1
+./SS_1/five.txt
+./SS_1/four.txt
+./SS_1/shreyash.py
+./SS_folder
+./SS_folder/SS_1
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/three.txt
+./SS_folder/two.txt
+
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Update
+DATA: Storage server updated
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Storage server added
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Storage server added
+
+FROM: 10.42.0.1:8081
+TYPE: Client Connection
+DATA: Connection Connected
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: ./SS_1
+./SS_1/five.txt
+./SS_1/four.txt
+./SS_1/shreyash.py
+./SS_folder
+./SS_folder/SS_1
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/three.txt
+./SS_folder/two.txt
+
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:6
+DATA: path:./SS_1/shreyash.py destination_path:./SS_folder
+
+TO: 10.42.0.25:8080
+TYPE: Copy Request
+DATA: Request sent to storage server
+
+TO: 10.42.0.25:8080
+TYPE: Copy Request
+DATA: Request sent to storage server
+
+TO: 10.42.0.1:8081
+TYPE: Copy Request
+DATA: Success:Created a copy of the file/folder
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:2
+DATA: path:./SS_folder/shreyash.py 
+
+TO: 10.42.0.1:8081
+TYPE: 2 type request
+DATA: IP: 10.42.0.25 Port: 2000
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:5
+DATA: path:./SS_folder/shreyash.py 
+
+TO: 10.42.0.25:8080
+TYPE: Delete Request
+DATA: Sending delete request to storage server
+
+FROM: 10.42.0.25:8080
+TYPE: Delete Request
+DATA: Received acknowledgment from storage server
+
+TO: 10.42.0.1:8081
+TYPE: Delete Request
+DATA: Success: Path ./SS_folder/shreyash.py deleted successfully
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: ./SS_1
+./SS_1/five.txt
+./SS_1/four.txt
+./SS_1/shreyash.py
+./SS_folder
+./SS_folder/SS_1
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/three.txt
+./SS_folder/two.txt
+
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:2
+DATA: path:./SS_folder/shreyash.py 
+
+TO: 10.42.0.1:8081
+TYPE: 2 type request
+DATA: Error: Path not found
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:5
+DATA: path:./SS_folder/SS_1 
+
+TO: 10.42.0.25:8080
+TYPE: Delete Request
+DATA: Sending delete request to storage server
+
+FROM: 10.42.0.25:8080
+TYPE: Delete Request
+DATA: Received acknowledgment from storage server
+
+TO: 10.42.0.1:8081
+TYPE: Delete Request
+DATA: Error: Unable to delete path ./SS_folder/SS_1
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Storage server added
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Storage server added
+
+FROM: 10.42.0.1:8081
+TYPE: Client Connection
+DATA: Connection Connected
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: ./SS_1
+./SS_1/move
+./SS_1/move/hello.txt
+./SS_1/three.txt
+./SS_1/two.txt
+./SS_folder
+./SS_folder/five.txt
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/three.txt
+
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:6
+DATA: path:./SS_1/move destination_path:./SS_folder
+
+TO: 10.42.0.25:8080
+TYPE: Copy Request
+DATA: Request sent to storage server
+
+TO: 10.42.0.25:8080
+TYPE: Copy Request
+DATA: Request sent to storage server
+
+TO: 10.42.0.1:8081
+TYPE: Copy Request
+DATA: Success:Created a copy of the file/folder
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: ./SS_1
+./SS_1/move
+./SS_1/move/hello.txt
+./SS_1/three.txt
+./SS_1/two.txt
+./SS_folder
+./SS_folder/five.txt
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/move
+./SS_folder/three.txt
+
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Update
+DATA: Storage server updated
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: ./SS_1
+./SS_1/move
+./SS_1/move/hello.txt
+./SS_1/three.txt
+./SS_1/two.txt
+./SS_folder
+./SS_folder/five.txt
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/three.txt
+
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:6
+DATA: path:./SS_1/move destination_path:./SS_folder
+
+TO: 10.42.0.25:8080
+TYPE: Copy Request
+DATA: Request sent to storage server
+
+TO: 10.42.0.25:8080
+TYPE: Copy Request
+DATA: Request sent to storage server
+
+TO: 10.42.0.1:8081
+TYPE: Copy Request
+DATA: Success:Created a copy of the file/folder
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: ./SS_1
+./SS_1/move
+./SS_1/move/hello.txt
+./SS_1/three.txt
+./SS_1/two.txt
+./SS_folder
+./SS_folder/five.txt
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/move
+./SS_folder/three.txt
+
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Update
+DATA: Storage server updated
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Update
+DATA: Storage server updated
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Update
+DATA: Storage server updated
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Storage server added
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Storage server added
+
+FROM: 10.42.0.1:8081
+TYPE: Client Connection
+DATA: Connection Connected
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: ./SS_1
+./SS_1/move
+./SS_1/move/hello.txt
+./SS_1/three.txt
+./SS_1/two.txt
+./SS_folder
+./SS_folder/five.txt
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/three.txt
+
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:6
+DATA: path:./SS_1/move destination_path:./SS_folder
+
+TO: 10.42.0.25:8080
+TYPE: Copy Request
+DATA: Request sent to storage server
+
+TO: 10.42.0.25:8080
+TYPE: Copy Request
+DATA: Request sent to storage server
+
+TO: 10.42.0.1:8081
+TYPE: Copy Request
+DATA: Success:Created a copy of the file/folder
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: ./SS_1
+./SS_1/move
+./SS_1/move/hello.txt
+./SS_1/three.txt
+./SS_1/two.txt
+./SS_folder
+./SS_folder/five.txt
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/move
+./SS_folder/three.txt
+
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Update
+DATA: Storage server No changes detected
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Storage server added
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Update
+DATA: Storage server updated
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Storage server added
+
+FROM: 10.42.0.1:8081
+TYPE: Client Connection
+DATA: Connection Connected
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: 
+./SS_1
+./SS_1/move
+./SS_1/move/hello.txt
+./SS_1/three.txt
+./SS_folder
+./SS_folder/five.txt
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/three.txt
+
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:6
+DATA: path:./SS_1/move destination_path:./SS_folder
+
+TO: 10.42.0.1:8081
+TYPE: Copy Request
+DATA: Error: Source or Destination Path not found
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Client Connection
+DATA: Connection Connected
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Storage server added
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: ./SS_1
+./SS_1/move
+./SS_1/move/hello.txt
+./SS_1/three.txt
+
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Storage server added
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: ./SS_1
+./SS_1/move
+./SS_1/move/hello.txt
+./SS_1/three.txt
+./SS_folder
+./SS_folder/five.txt
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/three.txt
+
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:6
+DATA: path:./SS_1/move destination_path:./SS_folder
+
+TO: 10.42.0.25:8080
+TYPE: Copy Request
+DATA: Request sent to storage server
+
+TO: 10.42.0.25:8080
+TYPE: Copy Request
+DATA: Request sent to storage server
+
+TO: 10.42.0.1:8081
+TYPE: Copy Request
+DATA: Success:Created a copy of the file/folder
+
+FROM: 10.42.0.1:8081
+TYPE: Client Connection
+DATA: Connection Connected
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: 
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Client Connection
+DATA: Connection Connected
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: 
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Storage server added
+
+FROM: 10.42.0.1:8081
+TYPE: Client Connection
+DATA: Connection Connected
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: ./SS_folder
+./SS_folder/SS_1
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/three.txt
+./SS_folder/two.txt
+
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:3
+DATA: path:./SS_folder/four.txt content:hi
+ 
+
+TO: 10.42.0.1:8081
+TYPE: 3 type request
+DATA: IP: 10.42.0.1 Port: 2000
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Storage server added
+
+FROM: 10.42.0.1:8081
+TYPE: Client Connection
+DATA: Connection Connected
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: ./SS_folder
+./SS_folder/SS_1
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/three.txt
+./SS_folder/two.txt
+
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:3
+DATA: path:./SS_folder/four.txt content:kasdfk 
+
+TO: 10.42.0.1:8081
+TYPE: 3 type request
+DATA: IP: 10.42.0.1 Port: 2000
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Storage server added
+
+FROM: 10.42.0.1:8081
+TYPE: Client Connection
+DATA: Connection Connected
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: ./SS_folder
+./SS_folder/SS_1
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/three.txt
+./SS_folder/two.txt
+
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:3
+DATA: path:./SS_folder/four.txt content:fsdaf 
+
+TO: 10.42.0.1:8081
+TYPE: 3 type request
+DATA: IP: 10.42.0.1 Port: 2000
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Storage server added
+
+FROM: 10.42.0.1:8081
+TYPE: Client Connection
+DATA: Connection Connected
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: ./SS_folder
+./SS_folder/SS_1
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/three.txt
+./SS_folder/two.txt
+
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:3
+DATA: path:./SS_folder/heaven.txt content:fsadfa
+ 
+
+TO: 10.42.0.1:8081
+TYPE: 3 type request
+DATA: IP: 10.42.0.1 Port: 2000
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Storage server added
+
+FROM: 10.42.0.1:8081
+TYPE: Client Connection
+DATA: Connection Connected
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: ./SS_folder
+./SS_folder/SS_1
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/three.txt
+./SS_folder/two.txt
+
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:3
+DATA: path:./SS_folder/three.txt content:fsdf
+ 
+
+TO: 10.42.0.1:8081
+TYPE: 3 type request
+DATA: IP: 10.42.0.1 Port: 2000
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Storage server added
+
+FROM: 10.42.0.1:8081
+TYPE: Client Connection
+DATA: Connection Connected
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: ./SS_folder
+./SS_folder/SS_1
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/three.txt
+./SS_folder/two.txt
+
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:3
+DATA: path:./SS_folder/three.txt content:fdsaf
+ 
+
+TO: 10.42.0.1:8081
+TYPE: 3 type request
+DATA: IP: 10.42.0.25 Port: 2000
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Client Connection
+DATA: Connection Connected
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Storage server added
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: ./SS_folder
+./SS_folder/SS_1
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/three.txt
+./SS_folder/two.txt
+
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:3
+DATA: path:./SS_folder/four.txt content:sdafsaf 
+ 
+
+TO: 10.42.0.1:8081
+TYPE: 3 type request
+DATA: IP: 10.42.0.25 Port: 2000
+
+FROM: 10.42.0.1:8081
+TYPE: Client Connection
+DATA: Connection Connected
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Storage server added
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Update
+DATA: Storage server No changes detected
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Update
+DATA: Storage server No changes detected
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: ./SS_folder
+./SS_folder/SS_1
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/three.txt
+./SS_folder/two.txt
+
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:3
+DATA: path:./SS_folder/heaven.txt content:sdfasfsa
+ 
+
+TO: 10.42.0.1:8081
+TYPE: 3 type request
+DATA: IP: 10.42.0.25 Port: 2000
+
+FROM: 10.42.0.1:8081
+TYPE: Client Connection
+DATA: Connection Connected
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Storage server added
+
+FROM: 10.42.0.1:8081
+TYPE: Client Connection
+DATA: Connection Connected
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Connection accepted
+
+FROM: 10.42.0.25:8080
+TYPE: Storage Server Connection
+DATA: Storage server added
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:1
+DATA: <no data>
+
+TO: 10.42.0.1:8081
+TYPE: List All Files
+DATA: ./SS_folder
+./SS_folder/SS_1
+./SS_folder/four.txt
+./SS_folder/heaven.txt
+./SS_folder/three.txt
+./SS_folder/two.txt
+
+
+FROM: 10.42.0.1:8081
+TYPE: Client Request
+DATA: Request Received
+
+FROM: 10.42.0.1:8081
+TYPE: Request_type:3
+DATA: path:./SS_folder/heaven.txt content:sfadf
+ 
+
+TO: 10.42.0.1:8081
+TYPE: 3 type request
+DATA: IP: 10.42.0.25 Port: 2000
+
