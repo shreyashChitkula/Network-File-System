@@ -168,10 +168,10 @@ The system is designed to be modular and scalable, adhering to the following pri
 Feel free to reach out for any queries or contributions!
 
 ## Team
-1. Ch.Shreyash
-2. Maryala Sai Teja
-3. Prajas Wadekar
-4. Vishnu Sathwik reddy
+1. [Ch.Shreyash](https://github.com/shreyashChitkula)
+2. [Maryala Sai Teja](https://github.com/saitejaMaryala)
+3. [Prajas Wadekar](https://github.com/PrajasW)
+4. [Vishnu Sathwik reddy]()
 
 
 
